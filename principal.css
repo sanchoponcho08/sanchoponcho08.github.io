@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #ddd;
+  background: linear-gradient(#8a2f3c, #161515);
+  height: 100vh;
+  /*(#222, #8a2f3c);*/
+  /*background-color:#222;*/
+}
+
 .carrusel {
   position: relative;
   max-width: 600px;
