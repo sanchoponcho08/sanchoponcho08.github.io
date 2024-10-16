@@ -8,12 +8,12 @@ body {
   /*background-color:#222;*/
 }
 form {
-  padding: 40px;
-  max-width: 1000px;
+  padding: 150px;
+  max-width: 1500px;
   height: 80vh;
   margin: auto;
   box-shadow: 0px 0px 55px #fff2;
-  margin-top: 50px;
+  margin-top: 90px;
   border-radius: 8px;
   font-size: 18px;
   font-size: 1.5em;
@@ -28,10 +28,10 @@ h2:hover {
 h2 {
   margin-top: 15px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.8em;
+  font-size: 2.9em;
   padding: 10px;
 }
 
@@ -66,10 +66,12 @@ textarea:hover {
   border-color: #ddd;
 }
 label {
-  padding: 30px;
   display: block;
+  margin-top: 30px;
   margin-bottom: 8px;
   font-weight: bold;
+  font-size: 2.3em;
+  padding: 30px;
 }
 
 button {
@@ -78,6 +80,9 @@ button {
   background-color: #8a2f3d5d;
   color: #ddd;
   cursor: pointer;
+  font-size: 3em;
+  border-radius: 12px;
+  padding: 30px;
 }
 button:hover {
   background-color: #c42d3a;
