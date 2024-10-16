@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logoconteiner">
+          <a href="#" class="logo">
+            <img src="imagenes/pelotaicono.png" alt="Logo" />
+          </a>
+          <h3 class="titulonav"><span class="4vientos">4</span> vientos</h3>
+        </div>
+        <ul>
+          <li><a href="Principal.html">Inicio</a></li>
+          <li><a href="categorias.html">Categorías</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form>
+      <h2>Formulario de inscripcion/consulta <br />- Club 4 Vientos</h2>
+      <div class="input">
+        <label
+          >Nombre
+          <input type="text" placeholder="Escribe tu nombre" />
+        </label>
+      </div>
+
+      <div class="input">
+        <label
+          >Email
+          <input type="text" placeholder="club4vientosejemplo@gmail.com" />
+        </label>
+      </div>
+
+      <div class="input">
+        <label>
+          Mensaje
+          <textarea rows="8" placeholder="Deja tu mensaje..."></textarea>
+        </label>
+      </div>
+
+      <div class="input">
+        <label
+          >Categorias
+          <select name="categorias">
+            <option value="categoria1">Minis (4-12 años)</option>
+            <option value="categoria2">Juveniles (12-18años)</option>
+            <option value="categoria3">Primera Masculino (+18)</option>
+            <option value="categoria4">Primera Femenino (+18)</option>
+          </select>
+        </label>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

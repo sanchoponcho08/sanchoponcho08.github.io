@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Principal.html" />
+  
+    <link rel="icon" href="imagenes/pelotaicono.png" type="image/png">
+  </head>
+  <body>
+    <div class="carrusel">
+      <div class="imagenes">
+        <img src="categoriafem.jpg" alt="Imagen 1" />
+        <img src="categoriajuv.jpg" alt="Imagen 2" />
+        <img src="categoriamasc.jpg" alt="Imagen 3" />
+      </div>
+      <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+      <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+    </div>
+    <script src="principal.js"></script>
+    <header>
+      <h1>Club 4 Vientos</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categorias.html">Categorías</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Somos el Club 4 Vientos, Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Id doloribus nisi eligendi atque hic, repudiandae
+        voluptas nulla ut velit vero laboriosam voluptate quas similique
+        exercitationem nesciunt, harum, molestias optio earum.
+      </p>
+      <img
+        src="imagenes/logo.jpg"
+        alt="Imagen representativa del club"
+        width="500px"
+        height="400px"
+      />
+    </div>
+    <div id="noticias">
+      <h2>Ultimas Noticias</h2>
+      <p>
+        Nuestra primera femenino obtuvo una victoria asegurandose el paso a
+        semifinales ... ( deberia ser con algun carrusel)
+      </p>
+    </div>
+
+    <div id="categorias">
+      <h2>Nuestras Categorías</h2>
+      <div class="categoriascss">
+        <div class="categoria">
+          <h3><a href="categoriamini.html">Minis</a></h3>
+          <img
+            src="imagenes/categoriamini.jpg"
+            alt="Categoria minis"
+            width="200px"
+            height="150px"
+          />
+        </div>
+        <div class="categoria">
+          <h3><a href="categoriajuv.html">Juveniles</a></h3>
+          <img src="imagenes/categoriajuv.jpg" alt="Categoria Juveniles"
+          width="200px" height="150px"
+        </div>
+        <div class="categoria">
+          <h3><a href="categoriamasc.html">Primera Masculino</a></h3>
+          <img src="imagenes/categoriamasc.jpg" alt="Categoria Juveniles"
+          width="200px" height="150px"/>
+        </div>
+        <div class="categoria">
+          <h3><a href="">Primera Femenino</a></h3>
+          <img src="imagenes/categoriafem.jpg" alt="Categoria femenino"
+          width="200px" height="150px"/>
+      </div>
+    </div>
+  </body>
+</html>

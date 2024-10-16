@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #ddd;
+  background: linear-gradient(#8a2f3c, #161515);
+  height: 100vh;
+  /*(#222, #8a2f3c);*/
+  /*background-color:#222;*/
+}
+form {
+  padding: 40px;
+  max-width: 1000px;
+  height: 80vh;
+  margin: auto;
+  box-shadow: 0px 0px 55px #fff2;
+  margin-top: 50px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+h2:hover {
+  text-decoration: underline rgb(218, 208, 210);
+}
+
+h2 {
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8em;
+  padding: 10px;
+}
+
+input,
+button,
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: none;
+  border: 1px solid #666;
+  box-shadow: 0px 0px 15px #0003;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #ddd;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+input:hover {
+  background-color: #5f101b;
+  border-color: #ddd;
+}
+select:hover {
+  background-color: #5f101b;
+  border-color: #ddd;
+}
+textarea:hover {
+  background-color: #631923;
+  border-color: #ddd;
+}
+label {
+  padding: 30px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+button {
+  width: 40%;
+  margin: auto;
+  background-color: #8a2f3d5d;
+  color: #ddd;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #c42d3a;
+}
+
+textarea {
+  min-width: 100%;
+  resize: none;
+  min-height: 102px;
+  font-family: sans-serif;
+}
+option {
+  background-color: #222;
+  padding: 10px;
+}
+.logoconteiner {
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  color: rgb(230, 229, 229);
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span {
+  color: #cf7575;
+  font-size: 50px;
+  margin-right: 5px;
+}
+nav {
+  display: flex;
+  padding: 15px 0;
+  background: linear-gradient(#8a2f3c, #610d26); /* Color de fondo */
+  overflow: hidden;
+  justify-content: end; /* Ocultar elementos flotantes */
+  border-bottom: 5px solid rgb(71, 11, 11);
+  justify-content: space-between;
+}
+
+nav:hover {
+  background: linear-gradient(#851d3c, #330612);
+}
+
+nav a {
+  color: rgb(230, 214, 214);
+  font-size: 25px; /* Color del texto */
+  text-align: center; /* Alinear el texto al centro */
+  padding: 14px 20px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  margin: 0 15px; /* Espaciado lateral entre enlaces */
+  transition: background-color 0.3s; /* Transición suave */ /* Transición suave al cambiar color */
+}
+
+/* Cambiar color de fondo al pasar el mouse sobre el enlace */
+nav a:hover {
+  background-color: #fffffa2d;
+  color: rgba(250, 72, 72, 0.986);
+  border-radius: 8px; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo de los elementos activos */
+nav a.active {
+  background-color: #4caf50; /* Color de fondo para el elemento activo */
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 20px;
+}
+
+img {
+  height: 80px;
+  width: auto;
+  text-align: left;
+  margin-right: 18px;
+}
+img:hover {
+  height: 120px;
+}
+.titulonav {
+  font-size: 30px;
+}
