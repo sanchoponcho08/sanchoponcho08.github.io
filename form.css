@@ -9,7 +9,7 @@ body {
 }
 form {
   padding: 150px;
-  max-width: 1500px;
+  width: 45vh;
   height: 80vh;
   margin: auto;
   box-shadow: 0px 0px 55px #fff2;
@@ -95,28 +95,30 @@ textarea {
   font-family: sans-serif;
 }
 option {
-  background-color: #222;
+  background-color: #8a2f3d5d;
   padding: 10px;
 }
 .logoconteiner {
   display: flex;
   align-items: center;
+  width: 40%;
+  height: 30%;
 }
-
-h3 {
+.titulonav {
+  font-size: 70px;
   color: rgb(230, 229, 229);
   text-transform: uppercase;
   letter-spacing: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 span {
   color: #cf7575;
-  font-size: 50px;
-  margin-right: 5px;
+  font-size: 80px;
 }
 nav {
   display: flex;
-  padding: 15px 0;
+  padding: 25px 0;
   background: linear-gradient(#8a2f3c, #610d26); /* Color de fondo */
   overflow: hidden;
   justify-content: end; /* Ocultar elementos flotantes */
@@ -129,8 +131,9 @@ nav:hover {
 }
 
 nav a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(230, 214, 214);
-  font-size: 25px; /* Color del texto */
+  font-size: 65px; /* Color del texto */
   text-align: center; /* Alinear el texto al centro */
   padding: 14px 20px; /* Espaciado interno */
   text-decoration: none; /* Sin subrayado */
@@ -157,14 +160,12 @@ ul {
 }
 
 img {
-  height: 80px;
+  height: 120px;
   width: auto;
   text-align: left;
   margin-right: 18px;
+  margin-left: 30px;
 }
 img:hover {
-  height: 120px;
-}
-.titulonav {
-  font-size: 30px;
+  height: 150px;
 }
