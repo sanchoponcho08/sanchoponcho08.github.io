@@ -1,26 +1,22 @@
-const imagenesArray = [
-  "categoriafem.jpg",
-  "categoriajuv.jpg",
-  "categoriamasc.jpg",
-];
+let indiceImagen = 0;
+const imagenes = document.querySelectorAll('.imagenes img');
 
-let index = 0;
+function mostrarImagen(indice) {
+    if (indice < 0) {
+        indiceImagen = imagenes.length - 1; 
+    } else if (indice >= imagenes.length) {
+        indiceImagen = 0;
+    } else {
+        indiceImagen = indice; 
+    }
 
-function mostrarImagen() {
-  const imagenes = document.querySelector(".imagenes");
-  imagenes.innerHTML = `<img src="${imagenesArray[index]}" alt="Imagen ${
-    index + 1
-  }">`;
+    const desplazamiento = -indiceImagen * 100; 
+    document.querySelector('.imagenes').style.transform = `translateX(${desplazamiento}%)`;
 }
 
-function cambiarImagen(direction) {
-  index += direction;
-  if (index >= imagenesArray.length) {
-    index = 0; // Volver al inicio
-  } else if (index < 0) {
-    index = imagenesArray.length - 1; // Ir al final
-  }
-  mostrarImagen();
+function cambiarImagen(direccion) {
+    mostrarImagen(indiceImagen + direccion);
 }
 
-mostrarImagen();
+mostrarImagen(indiceImagen);
+
