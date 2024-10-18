@@ -2,36 +2,42 @@ body {
   font-family: sans-serif;
   color: #ddd;
   background: linear-gradient(#8a2f3c, #161515);
-  height: 100vh;
+  height: 170vh;
+  margin: 0;
   /*(#222, #8a2f3c);*/
   /*background-color:#222;*/
 }
 form {
-  padding: 150px;
-  width: 45vh;
-  height: 80vh;
+  padding: 20px 35px;
+
+  width: 50%;
+  height: 130vh;
   margin: auto;
   box-shadow: 0px 0px 55px #fff2;
-  margin-top: 2.3vh;
+  margin-top: 4%;
   border-radius: 8px;
-  font-size: 18px;
-  font-size: 1.5em;
+  font-size: 8px;
+
   display: flex;
   flex-direction: column;
 }
 
 h2:hover {
   text-decoration: underline rgb(218, 208, 210);
+  color: #d1d1d1;
 }
 
 h2 {
-  margin-top: 15px;
+  margin-top: 10px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10x;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2.9em;
+  font-size: 3.5em;
+  letter-spacing: 0.5px;
   padding: 10px;
+  color: #bebebe;
+  letterborder: #161515;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 input,
@@ -42,13 +48,14 @@ select {
   box-sizing: border-box;
   padding: 10px 12px;
   border: none;
-  border: 1px solid #666;
+  border-bottom: 1px solid #666;
+
   box-shadow: 0px 0px 15px #0003;
   background-color: transparent;
   border-radius: 4px;
   color: #ddd;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  margin-bottom: 3%;
+  margin-top: 3%;
   font-size: 1.2em;
 }
 
@@ -65,12 +72,13 @@ textarea:hover {
   border-color: #ddd;
 }
 label {
+  color: #c7c7c7;
   display: block;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 8px;
   font-weight: bold;
-  font-size: 2.3em;
-  padding: 30px;
+  font-size: 2.7em;
+  padding: 10px;
 }
 
 button {
@@ -81,7 +89,7 @@ button {
   cursor: pointer;
   font-size: 3em;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px;
 }
 button:hover {
   background-color: #c42d3a;
@@ -94,35 +102,39 @@ textarea {
   font-family: sans-serif;
 }
 option {
-  background-color: #8a2f3d5d;
+  background-color: #333131b9;
   padding: 10px;
 }
 .logoconteiner {
   display: flex;
   align-items: center;
-  width: 40%;
-  height: 30%;
+  padding-left: 10px;
 }
 .titulonav {
-  font-size: 70px;
-  color: rgb(230, 229, 229);
+  padding: 20px;
+  margin: 0px;
+  font-size: 36px;
+  color: #ec9797;
   text-transform: uppercase;
-  letter-spacing: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 6px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.titulonav:hover {
+  font-size: 30px;
+  color: rgba(250, 72, 72, 0.986);
 }
 
-span {
-  color: #cf7575;
-  font-size: 80px;
-}
 nav {
+  width: 100%;
+  height: 60px;
   display: flex;
-  padding: 25px 0;
+  padding: 5px 0;
   background: linear-gradient(#8a2f3c, #610d26); /* Color de fondo */
   overflow: hidden;
   justify-content: end; /* Ocultar elementos flotantes */
-  border-bottom: 5px solid rgb(71, 11, 11);
+  border-bottom: 3px solid rgb(71, 11, 11);
   justify-content: space-between;
+  box-shadow: 0px 0px 30px rgba(29, 10, 10, 0.404);
 }
 
 nav:hover {
@@ -130,19 +142,31 @@ nav:hover {
 }
 
 nav a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(230, 214, 214);
-  font-size: 65px; /* Color del texto */
+  background-color: transparent;
+  border: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgba(226, 226, 226, 0.945);
+  font-size: 16px; /* Color del texto */
   text-align: center; /* Alinear el texto al centro */
-  padding: 14px 20px; /* Espaciado interno */
+  padding: 0px; /* Espaciado interno */
   text-decoration: none; /* Sin subrayado */
-  margin: 0 15px; /* Espaciado lateral entre enlaces */
-  transition: background-color 0.3s; /* Transición suave */ /* Transición suave al cambiar color */
+  margin: 15px; /* Espaciado lateral entre enlaces */
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  /* Transición suave */ /* Transición suave al cambiar color */
+}
+#index {
+  padding: 50px 20px;
+  margin: 0;
+}
+
+#index:hover {
+  font-size: 18px;
 }
 
 /* Cambiar color de fondo al pasar el mouse sobre el enlace */
 nav a:hover {
-  background-color: #fffffa2d;
+  background-color: #2b24245d;
   color: rgba(250, 72, 72, 0.986);
   border-radius: 8px; /* Color de fondo al pasar el mouse */
 }
@@ -159,12 +183,15 @@ ul {
 }
 
 img {
-  height: 120px;
+  margin: 0px;
+  height: 50px;
   width: auto;
   text-align: left;
-  margin-right: 18px;
-  margin-left: 30px;
+  padding: 20px;
 }
 img:hover {
-  height: 150px;
+  height: 70px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
 }
