@@ -204,13 +204,13 @@ img:hover {
 
 @media (max-width: 768px) {
   form {
-    width: 90%; /* Reducir el tamaño del formulario */
+    width: 90%;
     font-size: 0.875rem;
-    padding: 20px; /* Reducir el tamaño de la fuente */
+    padding: 20px;
   }
 
   button {
-    width: 80%; /* Ajustar el ancho del botón */
+    width: 80%;
     font-size: 1.5em;
   }
 
@@ -220,16 +220,19 @@ img:hover {
   }
 
   nav a {
-    font-size: 14px; /* Reducir el tamaño de las fuentes */
-    margin: 10px 0; /* Más espaciado entre enlaces */
+    font-size: 14px;
+    margin: 10px 0;
   }
 
   h2 {
-    font-size: 2.2em; /* Reducir tamaño de los encabezados */
+    font-size: 2.2em;
   }
 
   img {
-    height: 40px; /* Reducir el tamaño de las imágenes */
+    height: 40px;
+  }
+
+      height: 40px; /* Reducir el tamaño de las imágenes */
   }
 }
 
@@ -240,5 +243,5 @@ img:hover {
 
   nav .hamburger {
     display: block; /* Mostrar el ícono de menú hamburguesa */
-  }
+
 }
