@@ -23,33 +23,48 @@
         </ul>
       </nav>
     </header>
-    <form>
+    <form id="Formulario">
       <h2>Formulario de inscripcion/consulta <br />- Club 4 Vientos</h2>
       <div class="input">
         <label
           >Nombre
-          <input type="text" placeholder="Escribe tu nombre" />
+          <input
+            type="text"
+            id="usuario"
+            required
+            placeholder="Escribe tu nombre"
+          />
         </label>
       </div>
 
       <div class="input">
         <label
           >Email
-          <input type="text" placeholder="club4vientosejemplo@gmail.com" />
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="club4vientosejemplo@gmail.com"
+          />
         </label>
       </div>
 
       <div class="input">
         <label>
           Mensaje
-          <textarea rows="8" placeholder="Deja tu mensaje..."></textarea>
+          <textarea
+            rows="8"
+            id="mensaje"
+            required
+            placeholder="Deja tu mensaje..."
+          ></textarea>
         </label>
       </div>
 
       <div class="input">
         <label
           >Categorias
-          <select name="categorias">
+          <select name="categorias" id="categorias">
             <option value="categoria1">Minis (4-12 años)</option>
             <option value="categoria2">Juveniles (12-18años)</option>
             <option value="categoria3">Primera Masculino (+18)</option>
@@ -57,7 +72,7 @@
           </select>
         </label>
       </div>
-      <button type="submit">Enviar</button>
+      <button type="submit" id="enviar">Enviar</button>
     </form>
     <div id="result"></div>
   </body>
