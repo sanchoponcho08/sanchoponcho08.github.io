@@ -190,6 +190,44 @@ ul {
   margin-bottom: 20%;
   margin-top: 5%;
 }
+
+.noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px; /* Margen exterior de la sección */
+}
+
+.noticia {
+  width: 25%;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9; /* Color de fondo de cada noticia */
+}
+
+.noticia img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.noticia-contenido {
+  /* Contenedor para el título y la descripción */
+  display: flex;
+  flex-direction: column;
+}
+
+.noticia-titulo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.noticia-fecha {
+  font-size: 0.9rem;
+  color: #888;
+}
 .titulo {
   text-align: center;
   font-size: 40px;
