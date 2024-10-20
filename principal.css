@@ -37,13 +37,12 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 8%;
   display: flex;
   align-items: center;
   padding: 5px 0;
   background: transparent; /* Color de fondo */
   overflow: hidden;
-
   justify-content: space-between;
   box-shadow: 0px 0px 30px rgba(29, 10, 10, 0.404);
 }
@@ -80,11 +79,13 @@ nav a {
 nav a:hover {
   background-color: #2b24245d;
   color: rgba(250, 72, 72, 0.986);
-  border-radius: 8px; /* Color de fondo al pasar el mouse */
+  border-radius: 8px;
+  /* Color de fondo al pasar el mouse */
 }
 
 nav.scrolled {
   background: linear-gradient(#851d3cda, #330612fb);
+  height: 5%;
 }
 
 ul {
@@ -100,7 +101,7 @@ ul {
   text-align: left;
   padding: 20px;
 }
-img:hover {
+.logoconteiner img:hover {
   height: 70px;
   padding: 0px;
   border: none;
@@ -109,7 +110,8 @@ img:hover {
 .primeraVista {
   width: 100%;
   height: 100vh; /* 100% de la altura de la pantalla */
-  background: url("imagenes/polideportivoimg.jpg") no-repeat center center/cover;
+  background: url("imagenes/polideportivoimg.jpg") no-repeat center/cover;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,15 +124,15 @@ img:hover {
 
 .logoVista img {
   width: 250px;
-  box-shadow: 0px 0px 55px rgba(226, 226, 226, 0.384);
+  box-shadow: 0px 0px 55px rgba(226, 226, 226, 0.637);
   border-radius: 8%;
 }
 
 .primeraVista h1 {
   font-size: 3rem;
   margin: 20px 0;
-  text-shadow: -5px -0px 0 rgb(49, 18, 18);
-  color: #cfc9c9;
+  text-shadow: -6px 0px rgb(53, 45, 45);
+  color: #ebebeb;
 }
 
 .scroll {
@@ -139,7 +141,55 @@ img:hover {
   font-size: 2rem;
   animation: bounce 1s infinite;
 }
+#tituloSecciones {
+  border-bottom: solid 2px #851d3c;
+  width: 100%;
+  color: #350d19;
+  font-size: 1rem;
+}
+#sobreNosotros,
+#noticias,
+#categorias {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 7%;
+  margin: 10px;
+}
+#sobreNosotros img {
+  width: 100%;
+  height: 90vw;
+  margin-top: 30px;
+}
+/*tarjetas para cada categoria*/
+#cat {
+  height: 35vw;
+  background: #e2e2e2;
+  margin: auto;
+  box-shadow: 2px 0 15px 0 #000;
+  padding-top: 40px;
+  margin-right: 20px;
+}
 
+#cat:hover {
+  width: 180vw;
+  background-color: #7a0e2e69;
+  font-weight: bold;
+}
+
+#buttonCat {
+  width: 40%;
+  margin: auto;
+  background-color: #8a2f3dea;
+  color: #ddd;
+  cursor: pointer;
+  font-size: 1.8em;
+  font-weight: bolder;
+  border-radius: 12px;
+  padding: 50px;
+  margin-bottom: 20%;
+  margin-top: 5%;
+}
 .titulo {
   text-align: center;
   font-size: 40px;
@@ -147,10 +197,12 @@ img:hover {
 }
 
 .slider-box {
-  width: 500px;
+  width: 100%;
   height: auto;
   margin: 50px auto 0;
   overflow: hidden;
+  text-align: center;
+  padding: 10px;
 }
 .slider-box ul {
   display: flex;
@@ -166,21 +218,21 @@ img:hover {
 }
 
 .texto {
-  position: absolute;
   text-align: center;
-  padding: 0 250px;
-  top: 250px;
-  color: #ffff;
+  padding: 0 0px;
+  color: #494040;
+  margin: auto;
 }
 
 .texto h2 {
-  font-size: 45px;
+  font-size: 20px;
   margin-bottom: 35px;
 }
 .slider-box img {
-  width: 100%;
+  width: 15vw;
 }
 
+/*/
 @keyframes slide {
   0% {
     margin-left: 0%;
@@ -210,14 +262,22 @@ img:hover {
     margin-left: -300%;
   }
 }
-
+*/
 @media (max-width: 991px) {
   body {
     padding: 0px;
   }
-
+  nav {
+    height: 10%;
+    width: 100%;
+  }
+  #buttonCat {
+    padding: 20px;
+    width: 40%;
+  }
   .slider-box {
     width: 100%;
+    padding: 10px;
   }
 
   .texto {
@@ -226,7 +286,7 @@ img:hover {
   }
 
   .texto h2 {
-    font-size: 35px;
+    font-size: 16px;
     margin-bottom: 15px;
   }
   .texto p {
