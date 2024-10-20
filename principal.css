@@ -1,12 +1,110 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   font-family: sans-serif;
-  color: #ddd;
-  background: linear-gradient(#8a2f3c, #161515);
+  color: #111;
+  background-color: #fafafa;
+  line-height: 1.6;
   height: auto;
+  font-size: 14px;
+  text-align: justify;
+  letter-spacing: 1.5px;
   /*(#222, #8a2f3c);*/
   /*background-color:#222;*/
+}
+
+.logoconteiner {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.titulonav {
+  padding: 20px;
+  margin: 0px;
+  font-size: 2.25rem;
+  color: #ec9797;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: -3px -2px 0 rgb(49, 18, 18);
+}
+.titulonav:hover {
+  font-size: 1.875rem;
+  color: rgba(250, 72, 72, 0.986);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  background: transparent; /* Color de fondo */
+  overflow: hidden;
+
+  justify-content: space-between;
+  box-shadow: 0px 0px 30px rgba(29, 10, 10, 0.404);
+}
+
+nav:hover {
+  background: linear-gradient(#851d3c, #330612);
+}
+
+nav a {
+  background-color: transparent;
+  border: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgba(226, 226, 226, 0.945);
+  font-size: 1rem; /* Color del texto */
+  text-align: center; /* Alinear el texto al centro */
+  padding: 0px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  margin: 15px; /* Espaciado lateral entre enlaces */
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  /* Transición suave */ /* Transición suave al cambiar color */
+}
+#index {
+  padding: 50px 20px;
+  margin: 0;
+  margin-left: auto;
+}
+
+#index:hover {
+  font-size: 1.125rem;
+}
+
+/* Cambiar color de fondo al pasar el mouse sobre el enlace */
+nav a:hover {
+  background-color: #2b24245d;
+  color: rgba(250, 72, 72, 0.986);
+  border-radius: 8px; /* Color de fondo al pasar el mouse */
+}
+
+nav.scrolled {
+  background: linear-gradient(#851d3cda, #330612fb);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 20px;
+}
+
+.logoconteiner img {
+  margin: 0px;
+  height: 50px;
+  width: auto;
+  text-align: left;
+  padding: 20px;
+}
+img:hover {
+  height: 70px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
 }
 .primeraVista {
   width: 100%;
@@ -24,14 +122,15 @@ body {
 
 .logoVista img {
   width: 250px;
-  box-shadow: 0px 0px 55px rgba(255, 255, 255, 0.384);
+  box-shadow: 0px 0px 55px rgba(226, 226, 226, 0.384);
   border-radius: 8%;
 }
 
 .primeraVista h1 {
   font-size: 3rem;
   margin: 20px 0;
-  text-shadow: -2px -0px 0 rgb(49, 18, 18);
+  text-shadow: -5px -0px 0 rgb(49, 18, 18);
+  color: #cfc9c9;
 }
 
 .scroll {
@@ -114,7 +213,7 @@ body {
 
 @media (max-width: 991px) {
   body {
-    padding: 30px;
+    padding: 0px;
   }
 
   .slider-box {
