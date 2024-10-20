@@ -197,19 +197,26 @@ ul {
   justify-content: space-between;
   margin: 20px; /* Margen exterior de la sección */
 }
-
+.noticia h3 {
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #330612;
+  text-align: center;
+}
 .noticia {
   width: 25%;
   margin: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #8a7b7ba4;
   padding: 15px;
-  background-color: #f9f9f9; /* Color de fondo de cada noticia */
+  background-color: #d3d3d3;
+  border-radius: 7px;
+  box-shadow: 0 0 8px #494040; /* Color de fondo de cada noticia */
 }
 
 .noticia img {
   width: 100%;
-  height: auto;
+  height: 18vw;
   margin-bottom: 10px;
+  border-radius: 2%;
 }
 
 .noticia-contenido {
