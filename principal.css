@@ -124,7 +124,7 @@ ul {
 
 .logoVista img {
   width: 250px;
-  box-shadow: 0px 0px 55px rgba(226, 226, 226, 0.637);
+  box-shadow: 0px 0px 25px rgba(226, 226, 226, 0.637);
   border-radius: 8%;
 }
 
@@ -169,6 +169,7 @@ ul {
   box-shadow: 2px 0 15px 0 #000;
   padding-top: 40px;
   margin-right: 20px;
+  border-bottom: 4px #851d3cda solid;
 }
 
 #cat:hover {
@@ -180,17 +181,29 @@ ul {
 #buttonCat {
   width: 40%;
   margin: auto;
-  background-color: #8a2f3dea;
-  color: #ddd;
+  background: none;
+  color: #b43434;
   cursor: pointer;
   font-size: 1.8em;
   font-weight: bolder;
-  border-radius: 12px;
+  border-radius: 35px;
   padding: 50px;
-  margin-bottom: 20%;
+  margin-bottom: 1vw;
   margin-top: 5%;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #851d3c;
+  letter-spacing: 3px;
+  text-align: center;
+  border: solid 2px black;
 }
-
+#buttonCat:hover {
+  background-color: #1d1d1df6;
+  color: #fafafa;
+  box-shadow: 0 0 20px #1d1d1d;
+  text-shadow: 0 0 2px #d8240ca9;
+  transition: all 1.4s cubic-bezier(0.23, 1, 0.32, 1);
+  border-bottom: 5px solid #d8240ca9;
+}
 .noticias {
   display: flex;
   flex-wrap: wrap;
@@ -205,11 +218,12 @@ ul {
 .noticia {
   width: 25%;
   margin: 10px;
-  border: 1px solid #8a7b7ba4;
+  border: 1px solid #e92a2a44;
   padding: 15px;
   background-color: #d3d3d3;
   border-radius: 7px;
-  box-shadow: 0 0 8px #494040; /* Color de fondo de cada noticia */
+  box-shadow: 0 0 8px #494040;
+  border-bottom: 8px #851d3cda solid; /* Color de fondo de cada noticia */
 }
 
 .noticia img {
@@ -235,6 +249,34 @@ ul {
   font-size: 0.9rem;
   color: #888;
 }
+
+footer {
+  padding-top: 50px;
+  width: 100%;
+  height: 32vw;
+  background-color: #1d1d1d;
+  padding: 25px 0;
+  border-bottom: 8px #851d3cda solid;
+  color: #efefef;
+  text-align: center;
+}
+.footerContainer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+body footer p {
+  font-size: 12px;
+  display: block;
+}
+
+body footer img {
+  height: 200px;
+}
+/*-------------------------------------------*/
 .titulo {
   text-align: center;
   font-size: 40px;
@@ -259,7 +301,6 @@ ul {
 .slider-box li {
   width: 100%;
   list-style: none;
-  position: relative;
 }
 
 .texto {
