@@ -1,13 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const nav = document.querySelector("nav"); // Seleccionar el nav
+  const nav = document.querySelector("nav");
 
-  // Agregar el evento de scroll
+  //  evento de scroll
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-      // Si el scroll es mayor que 50px
-      nav.classList.add("scrolled"); // Añade la clase 'scrolled'
+      nav.classList.add("scrolled");
     } else {
-      nav.classList.remove("scrolled"); // Remueve la clase 'scrolled'
+      nav.classList.remove("scrolled");
     }
   });
 });
