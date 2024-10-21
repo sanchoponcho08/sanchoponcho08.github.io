@@ -18,60 +18,15 @@
         <div class="arrow left" onclick="move(-1)">&#10094;</div>
         <ul>
             <li>
-            <img src="imagenes/categoriafem.jpg" alt="ssf" />
+            <img src="" alt="imagen" />
             <div class="texto">
-                <h2>Femenino</h2>
-                <p>loremssss</p>
-            </div>
-            </li>
-            <li>
-            <img src="imagenes/noticia1img.png" alt="" />
-            <div class="texto">
-                <h2>Chicas</h2>
-                <p>loremssssss</p>
-            </div>
-            </li>
-            <li>
-        <img src="imagenes/polideportivoimg.jpg" alt="" />
-            <div class="texto">
-                <h2>xd</h2>
-                <p>loremssss</p>
-            </div>
-            </li>
-            <li >
-            <img src="imagenes/noticia4img.png" alt="" />
-            <div class="texto">
-                <h2>Minis</h2>
-                <p>loremssss</p>
+                <h2></h2>
+                <p></p>
             </div>
             </li>
         </ul>
         <div class="arrow right" onclick="move(1)">&#10095;</div>
         </div>
-
-<script>
-    let currentIndex = 0;
-
-    function move(direction) {
-        const images = document.querySelectorAll('.carrusel-femenino li');
-        const totalImages = images.length;
-
-        // Ajusta el índice
-        currentIndex += direction;
-
-        // Asegúrate de que el índice se mantenga dentro del rango
-        if (currentIndex < 0) {
-            currentIndex = totalImages - 3; // Muestra las últimas 3 imágenes si está al inicio
-        } else if (currentIndex > totalImages - 3) {
-            currentIndex = 0; // Regresa al inicio si está al final
-        }
-
-        // Calcula la posición para centrar la imagen actual
-        const offset = -(currentIndex * (100 / 3)); // 100% dividido por 3 para mostrar 3 imágenes
-        document.querySelector('.carrusel-femenino ul').style.transform = `translateX(${offset}%)`;
-    }
-</script>
-
 
 </body>
 </html>

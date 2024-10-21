@@ -14,7 +14,7 @@ body{
 }
 
 .carrusel{
-    width: 100%;
+    width: 40%;
     height: auto;
     margin: 50px auto 0;
     position: relative;
@@ -105,24 +105,11 @@ color: #fafafa;
         }
     }
 */
-    @media (max-width: 991px) {
-        body {
-        padding: 30px;
-        }
-        }
-        .carrusel-femenino {
+    @media (max-width: 991px) { 
+        .carrusel {
         width: 100%;
         
         }
-        .texto {
-        top: 50px;
-        padding: 0 25px;
-        }
-        .texto h2 {
-        font-size: 35px;
-        margin-bottom: 15px;
-        }
-        .texto p {
-        font-size: 15px;
-        }
+    }
+        
 
