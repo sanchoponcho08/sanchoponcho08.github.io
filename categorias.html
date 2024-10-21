@@ -12,8 +12,10 @@
     <a href="categoriajuv.html" > Juveniles </a>
 </head>
 <body>
+    <script src="categorias.js"></script>
         <h2 class="titulo"> Primera Femenino</h2>
-        <div class="carrusel-femenino">
+        <div class="carrusel">
+        <div class="arrow left" onclick="move(-1)">&#10094;</div>
         <ul>
             <li>
             <img src="imagenes/categoriafem.jpg" alt="ssf" />
@@ -44,7 +46,32 @@
             </div>
             </li>
         </ul>
+        <div class="arrow right" onclick="move(1)">&#10095;</div>
         </div>
+
+<script>
+    let currentIndex = 0;
+
+    function move(direction) {
+        const images = document.querySelectorAll('.carrusel-femenino li');
+        const totalImages = images.length;
+
+        // Ajusta el índice
+        currentIndex += direction;
+
+        // Asegúrate de que el índice se mantenga dentro del rango
+        if (currentIndex < 0) {
+            currentIndex = totalImages - 3; // Muestra las últimas 3 imágenes si está al inicio
+        } else if (currentIndex > totalImages - 3) {
+            currentIndex = 0; // Regresa al inicio si está al final
+        }
+
+        // Calcula la posición para centrar la imagen actual
+        const offset = -(currentIndex * (100 / 3)); // 100% dividido por 3 para mostrar 3 imágenes
+        document.querySelector('.carrusel-femenino ul').style.transform = `translateX(${offset}%)`;
+    }
+</script>
+
 
 </body>
 </html>

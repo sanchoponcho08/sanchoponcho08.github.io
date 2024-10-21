@@ -13,21 +13,23 @@ body{
     padding-top: 50px;
 }
 
-.carrusel-femenino, .carrusel-masculino, .carrusel-juvenil{
-    width: 1200px;
+.carrusel{
+    width: 100%;
     height: auto;
     margin: 50px auto 0;
+    position: relative;
     overflow: hidden;
 }
 
-.carrusel-femenino, .carrusel-masculino, .carrusel-juvenil ul{
+.carrusel ul{
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 10s infinite alternate ease-in-out;
+    margin: 0;
+    transition: transform 0.5s ease;
 }
 
-.carrusel-femenino, .carrusel-masculino, .carrusel-juvenil li{
+.carrusel li{
 width: 100%;
 list-style: none;
 position: relative;
@@ -36,8 +38,8 @@ position: relative;
 .texto{
 position: absolute;
 text-align: center;
-padding: 0 250px;
-top: 250px;
+padding: 0 25px;
+top: 150px;
 color: #fafafa;    
 }
 
@@ -46,10 +48,33 @@ color: #fafafa;
     margin-bottom: 35px;
 }
 
-.carrusel-femenino, .carrusel-masculino, .carrusel-juvenil img{
-    width: 100%;
+.carrusel img{
+    height: 40vw;
+    width: auto;
 }
 
+.arrow {
+    cursor: pointer;
+    font-size: 30px;
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+
+/*
 @keyframes slide{
         0% {
         margin-left: 0%;
@@ -79,7 +104,7 @@ color: #fafafa;
         margin-left: -300%;
         }
     }
-
+*/
     @media (max-width: 991px) {
         body {
         padding: 30px;
