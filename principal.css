@@ -9,8 +9,6 @@ body {
   font-size: 14px;
   text-align: justify;
   letter-spacing: 1.5px;
-  /*(#222, #8a2f3c);*/
-  /*background-color:#222;*/
 }
 
 .logoconteiner {
@@ -41,7 +39,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 5px 0;
-  background: transparent; /* Color de fondo */
+  background: transparent;
   overflow: hidden;
   justify-content: space-between;
   box-shadow: 0px 0px 30px rgba(29, 10, 10, 0.404);
@@ -56,14 +54,13 @@ nav a {
   border: none;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgba(226, 226, 226, 0.945);
-  font-size: 1rem; /* Color del texto */
-  text-align: center; /* Alinear el texto al centro */
-  padding: 0px; /* Espaciado interno */
-  text-decoration: none; /* Sin subrayado */
-  margin: 15px; /* Espaciado lateral entre enlaces */
+  font-size: 1rem;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+  margin: 15px;
   transition: background-color 0.3s;
   text-transform: uppercase;
-  /* Transición suave */ /* Transición suave al cambiar color */
 }
 #index {
   padding: 50px 20px;
@@ -75,12 +72,10 @@ nav a {
   font-size: 1.125rem;
 }
 
-/* Cambiar color de fondo al pasar el mouse sobre el enlace */
 nav a:hover {
   background-color: #2b24245d;
   color: rgba(250, 72, 72, 0.986);
   border-radius: 8px;
-  /* Color de fondo al pasar el mouse */
 }
 
 nav.scrolled {
@@ -109,7 +104,7 @@ ul {
 }
 .primeraVista {
   width: 100%;
-  height: 100vh; /* 100% de la altura de la pantalla */
+  height: 100vh;
   background: url("imagenes/polideportivoimg.jpg") no-repeat center/cover;
 
   display: flex;
@@ -157,6 +152,13 @@ ul {
   padding: 7%;
   margin: 10px;
 }
+#noticias {
+  background: #1d1d1d;
+  border-radius: 2%;
+}
+#tituloSecciones {
+  color: #272727;
+}
 #sobreNosotros img {
   width: 100%;
   height: auto;
@@ -164,14 +166,14 @@ ul {
 }
 
 .columnasContenido {
-  display: flex; /* Flexbox para alinear los elementos en fila */
-  justify-content: space-between; /* Espacio entre las columnas */
-  gap: 20px; /* Espacio entre las dos columnas */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   padding: 20px 0;
 }
 
 .columna {
-  flex: 1; /* Cada columna ocupará el mismo espacio */
+  flex: 1;
   padding: 0 10px;
 }
 
@@ -181,17 +183,15 @@ ul {
 }
 
 .portada {
-  border: 3px solid rgba(61, 6, 6, 0.562);
+  border: 1px solid rgba(61, 6, 6, 0.562);
   width: 100%;
-  height: 25vw;
+  height: 15vw;
   background-image: url("imagenes/imagenfixed.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+
   background-position: bottom;
   background-attachment: fixed;
   border-radius: 1%;
 }
-
 
 .opaco {
   width: 100%;
@@ -246,11 +246,14 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px; /* Margen exterior de la sección */
-  ani
+  margin: 20px;
+}
+
+#noticias h2 {
+  color: #fafafa;
 }
 .noticia h3 {
-  text-transform:uppercase;
+  text-transform: uppercase;
   text-shadow: 0 0 2px #330612;
   text-align: center;
 }
@@ -262,7 +265,7 @@ ul {
   background-color: #d3d3d3;
   border-radius: 7px;
   box-shadow: 0 0 8px #494040;
-  border-bottom: 8px #851d3cda solid; /* Color de fondo de cada noticia */
+  border-bottom: 8px #851d3cda solid;
 }
 
 .noticia img {
@@ -289,20 +292,26 @@ ul {
   color: #888;
 }
 .noticia:hover {
-  background: linear-gradient(transparent 25%,#851d3cda,  #330612d3, rgb(26, 25, 25));
+  background: linear-gradient(
+    to top,
+    transparent 40%,
+    #290610d3,
+    transparent 20%
+  );
   color: #d4d3d3;
-  
+
   font-weight: bolder;
 }
 footer {
-  padding-top: 50px;
   width: 100%;
-  height: 32vw;
+  height: 30vw;
   background-color: #1d1d1d;
   padding: 25px 0;
   border-bottom: 8px #851d3cda solid;
   color: #efefef;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .footerContainer {
   padding-right: 15px;
@@ -310,7 +319,6 @@ footer {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  align-items: center;
 }
 
 body footer p {
@@ -320,6 +328,7 @@ body footer p {
 
 body footer img {
   height: 200px;
+  margin: auto;
 }
 /*-------------------------------------------*/
 .titulo {
