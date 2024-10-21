@@ -24,13 +24,13 @@ const images = [
 let currentIndex = 0;
 
 function updateCarousel() {
-    const imgElement = document.querySelector('.carrusel img');
-    const titleElement = document.querySelector('.carrusel .texto h2');
-    const descriptionElement = document.querySelector('.carrusel .texto p');
-
-    imgElement.src = images[currentIndex].src;
-    titleElement.textContent = images[currentIndex].title;
-    descriptionElement.textContent = images[currentIndex].description;
+    const listItems = document.querySelectorAll('.carrusel li');
+    listItems.forEach((item, index) => {
+        item.classList.remove('active'); // Ocultar todas las imágenes
+        if (index === currentIndex) {
+            item.classList.add('active'); // Mostrar solo la imagen activa
+        }
+    });
 }
 
 function move(direction) {
@@ -50,4 +50,3 @@ function move(direction) {
 
 // Inicializar el carrusel
 updateCarousel();
-

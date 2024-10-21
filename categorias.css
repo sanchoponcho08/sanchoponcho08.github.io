@@ -1,56 +1,51 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     background-color: #fafafa;
-
 }
 
-.titulo{
+.titulo {
     text-align: center;
     font-size: 40px;
     padding-top: 50px;
 }
 
-.carrusel{
-    width: 40%;
-    height: auto;
-    margin: 50px auto 0;
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    height: 400px; /* Ajusta según el tamaño deseado */
     overflow: hidden;
 }
 
-.carrusel ul{
+.carrusel ul {
     display: flex;
+    position: relative;
+    width: 100%;
     padding: 0;
-    width: 400%;
     margin: 0;
     transition: transform 0.5s ease;
 }
 
-.carrusel li{
-width: 100%;
-list-style: none;
-position: relative;
+.carrusel li {
+    width: 25%; /* Cada imagen ocupa el 25% del ancho total */
+    position: relative; /* Para superponer imágenes */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transiciones suaves */
+    opacity: 0.7; /* Baja opacidad inicial */
 }
 
-.texto{
-position: absolute;
-text-align: center;
-padding: 0 25px;
-top: 150px;
-color: #fafafa;    
+.carrusel li.active {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen activa */
+    opacity: 1; /* Muestra la imagen activa */
+    z-index: 1; /* Asegúrate de que esté encima de las demás */
 }
 
-.texto h2{
-    font-size: 45px;
-    margin-bottom: 35px;
-}
-
-.carrusel img{
-    height: 40vw;
-    width: auto;
+.carrusel img {
+    width: 100%; /* Ajusta al 100% del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .arrow {
@@ -63,6 +58,7 @@ color: #fafafa;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 2; /* Asegúrate de que las flechas estén encima */
 }
 
 .left {
@@ -73,43 +69,8 @@ color: #fafafa;
     right: 10px;
 }
 
-
-/*
-@keyframes slide{
-        0% {
-        margin-left: 0%;
-        }
-        20% {
-        margin-left: 0%;
-        }
-
-        25% {
-        margin-left: -100%;
-        }
-        45% {
-        margin-left: -100%;
-        }
-
-        50% {
-        margin-left: -200%;
-        }
-        70% {
-        margin-left: -200%;
-        }
-
-        75% {
-        margin-left: -300%;
-        }
-        100% {
-        margin-left: -300%;
-        }
-    }
-*/
-    @media (max-width: 991px) { 
-        .carrusel {
+@media (max-width: 991px) { 
+    .carrusel {
         width: 100%;
-        
-        }
     }
-        
-
+}
