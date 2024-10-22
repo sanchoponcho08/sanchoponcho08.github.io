@@ -1,4 +1,4 @@
-/*const images = [
+const images = [
     {
         src: "imagenes/categoriafem.jpg",
         title: "Femenino",
