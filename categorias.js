@@ -1,4 +1,4 @@
-const images = [
+/*const images = [
     {
         src: "imagenes/categoriafem.jpg",
         title: "Femenino",
@@ -50,3 +50,34 @@ function move(direction) {
 
 // Inicializar el carrusel
 updateCarousel();
+*/
+
+const images = [
+  "imagenes/categoriafem.jpg",
+  "imagenes/categoriajuv.jpg",
+  "imagenes/imagenfixed.png",
+];
+
+let currentIndex = 0;
+
+function showImage(index) {
+  const imgs = document.querySelectorAll("#inicioVista img");
+  imgs.forEach((img, i) => {
+    img.classList.remove("active");
+    if (i === index) {
+      img.classList.add("active");
+    }
+  });
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length; // Avanzar al siguiente índice
+  showImage(currentIndex);
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length; // Retroceder al índice anterior
+  showImage(currentIndex);
+}
+
+showImage(currentIndex);

@@ -1,9 +1,8 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 .logoconteiner {
   display: flex;
@@ -96,72 +95,39 @@ ul {
   border: none;
   background-color: transparent;
 }
-.titulo {
-  text-align: center;
-  font-size: 40px;
-  padding-top: 50px;
-}
-
-.carrusel {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#inicioVista {
   position: relative;
-  height: 100vw; /* Ajusta según el tamaño deseado */
+  width: 100%; /* Ancho del slider */
+  height: 100vw; /* Altura del slider */
   overflow: hidden;
+  margin: auto;
+  border: 2px solid #ccc;
+  /* Borde para el slider */
 }
 
-.carrusel ul {
-  display: flex;
-  position: relative;
+#inicioVista img {
   width: 100%;
-  padding: 0;
-  margin: 0;
-  transition: transform 0.5s ease;
+  height: 100%;
+  display: none;
 }
 
-.carrusel li {
-  width: 25%; /* Cada imagen ocupa el 25% del ancho total */
-  position: relative; /* Para superponer imágenes */
-  transition: transform 0.5s ease, opacity 0.5s ease; /* Transiciones suaves */
-  opacity: 0.7; /* Baja opacidad inicial */
-}
-
-.carrusel li.active {
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen activa */
-  opacity: 1; /* Muestra la imagen activa */
-  z-index: 1; /* Asegúrate de que esté encima de las demás */
-}
-
-.carrusel img {
-  width: 100%; /* Ajusta al 100% del contenedor */
-  border-radius: 10px; /* Bordes redondeados */
+#inicioVista img.active {
+  display: block;
 }
 
 .arrow {
   cursor: pointer;
-  font-size: 30px;
-  color: black;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  border-radius: 50%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 2; /* Asegúrate de que las flechas estén encima */
+  color: rgb(185, 22, 22);
+  font-size: 30px;
 }
 
 .left {
-  left: 10px;
+  left: 20px;
 }
 
 .right {
-  right: 10px;
-}
-
-@media (max-width: 991px) {
-  .carrusel {
-    width: 100%;
-  }
+  right: 20px;
 }
