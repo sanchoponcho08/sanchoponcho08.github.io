@@ -106,7 +106,6 @@ ul {
   width: 100%;
   height: 100vh;
   background: url("imagenes/polideportivoimg.jpg") no-repeat center/cover;
-
   display: flex;
   justify-content: center;
   align-items: center;

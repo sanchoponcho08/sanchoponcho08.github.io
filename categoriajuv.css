@@ -96,13 +96,11 @@ ul {
   background-color: transparent;
 }
 #inicioVista {
-  position: relative;
   width: 100%; /* Ancho del slider */
   height: 100vw; /* Altura del slider */
   overflow: hidden;
   margin: auto;
   border: 2px solid #ccc;
-  /* Borde para el slider */
 }
 
 #inicioVista img {
@@ -121,7 +119,7 @@ ul {
   top: 50%;
   transform: translateY(-50%);
   color: rgb(185, 22, 22);
-  font-size: 30px;
+  font-size: 70px;
 }
 
 .left {
@@ -130,4 +128,19 @@ ul {
 
 .right {
   right: 20px;
+}
+.slide-title {
+  /* Ocultamos el título por defecto */
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+}
+
+#inicioVista img.active + .slide-title {
+  /* Mostramos el título solo cuando la imagen está activa */
+  display: block;
 }
