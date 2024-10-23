@@ -221,6 +221,20 @@ img:hover {
   background-color: transparent;
 }
 
+.feedback{
+  margin-top: 20px;
+  font-size: 1em;
+  color: #555; 
+  background-color: #e9ecef; 
+  border-left: 4px solid #004085; 
+  padding: 10px; 
+  border-radius: 10px; 
+}
+.feedback-list{
+  margin-top: 10px; 
+}
+
+
 @media (max-width: 768px) {
   form {
     width: 90%;

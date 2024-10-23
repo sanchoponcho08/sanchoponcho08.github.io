@@ -1,17 +1,16 @@
-document.getElementById("registrationForm").onsubmit = function (event) {
-  event.preventDefault(); // Evitar el envío del formulario
+document.getElementById("Formulario").onsubmit = function (event) {
+  event.preventDefault(); 
 
-  // Obtener los valores del formulario
-  const name = document.getElementById("name").value.trim();
+  const name = document.getElementById("usuario").value.trim();
   const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
-  const category = document.getElementById("category").value;
+  const message = document.getElementById("mensaje").value.trim();
+  const category = document.getElementById("categorias").value;
 
-  // Limpiar el div de resultados
   const resultDiv = document.getElementById("result");
-  resultDiv.innerHTML = ""; // Limpiar contenido anterior
+  const feedbackDiv = document.getElementById("mensajeFeedback");
+  resultDiv.innerHTML = ""; 
+  feedbackDiv.innerHTML = ""; 
 
-  // Validación de campos
   let errors = [];
 
   if (!name) {
@@ -34,13 +33,12 @@ document.getElementById("registrationForm").onsubmit = function (event) {
     errors.push("Debes seleccionar una categoría.");
   }
 
-  // Mostrar errores o resultados
   if (errors.length > 0) {
     errors.forEach((error) => {
       const errorElement = document.createElement("p");
       errorElement.textContent = error;
-      errorElement.style.color = "red"; // Estilo para errores
-      resultDiv.appendChild(errorElement);
+      errorElement.style.color = "red"; 
+      feedbackDiv.appendChild(errorElement);
     });
   } else {
     const nameElement = document.createElement("p");
@@ -58,7 +56,6 @@ document.getElementById("registrationForm").onsubmit = function (event) {
     resultDiv.appendChild(messageElement);
     resultDiv.appendChild(categoryElement);
 
-    // Limpiar el formulario
     this.reset();
   }
 };
