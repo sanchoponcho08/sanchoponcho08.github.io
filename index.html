@@ -8,29 +8,60 @@
     <link rel="icon" href="imagenes/pelotaicono.png" type="image/png" />
   </head>
   <body>
-    <div class="primeraVista">
+    <div class="primeraVista" id="inicioVista">
+      <div class="arrow left" onclick="prevImage()">&#10094;</div>
+      <img src="imagenes/polideportivoimg.jpg" alt="Imagen 2" alt="Imagen 1" class="active" />
       <div class="logoVista">
-        <a href="#sobreNosotros">
+        <a href="#sobreNosotros">          
           <img src="imagenes/logo.jpg" alt="logo 4 vientos" />
         </a>
       </div>
       <h1 class="titulo">
+            <h1 class="slide-title">
         <span >Club Deportivo y Cultural <br />4
         Vientos
-      </h1>
-      <div class="scroll"></div>
+      </h1> </a>
+      </div>
+        <img src="imagenes/noticia3img.png" alt="Imagen 1" />
+        <img src="imagenes/minis1.jpeg" alt="Imagen 2" />
+        <div class="arrow right" onclick="nextImage()">&#10095;</div>
+      
+     
     </div>
     <header>
-      <nav>
+      <nav id="header">
         <div class="logoconteiner">
           <a href="#" class="logo">
             <img src="imagenes/pelotaicono.png" alt="Logo" />
           </a>
           <a class="titulonav"><span class="4vientos">4</span> vientos</a>
         </div>
-        <ul>
+        <ul class="nav">
           <li><a id="index" href="/index.html">Inicio</a></li>
           <li><a id="index" href="#cat">Categorías</a>
+            <ul>
+              <li>
+                <a id="index" class="submenu" href="categorias.html"
+                  >Femenino</a
+                >
+              </li>
+              <li>
+                <a id="index" class="submenu" href="categoriaprimasc.html"
+                  >Masculino</a
+                >
+              </li>
+              <li>
+                <a id="index" class="submenu" href="categoriajuv.html"
+                  >Juveniles</a
+                >
+              </li>
+              <li>
+                <a id="index" class="submenu" href="categoriamini.html"
+                  >Minis</a
+                >
+              </li>
+            </ul>
+
           </li>
 
           <li><a id="index" href="/formulario.html">Contacto</a></li>
@@ -106,17 +137,17 @@
             <div class="catText">
               <h3>Femenino</h3>
               <p>Rama competitiva chicas +18 y rama +40 recreativo</p>
-                <a href="#" class="catButton"> Leer mas...</a>
+                <a href="categoriaprifem.html" class="catButton"> Leer mas</a>
             </div>
           </li>
           <li id="cat">
-            <a href="/formulario.html">
+            <a href="categoriaprimasc.html">
             <img src="imagenes/categoriamasc.jpg" alt="masculino" />
             </a>
             <div class="catText">
               <h3>Masculino</h3>
               <p>Mayores de 18 años <br> basquet recrativo</p>
-              <a href="#" class="catButton"> Leer mas...</a>
+              <a href="categoriaprimasc.html" class="catButton"> Leer mas...</a>
             </div>
           </li>
           <li id="cat">
@@ -124,7 +155,7 @@
             <div class="catText">
               <h3>Juveniles</h3>
               <p> Mixto de (14 - 18 años)</p>
-              <a href="#" class="catButton"> Leer mas...</a>
+              <a href="categoriajuv.html" class="catButton"> Leer mas...</a>
             </div>
           </li>
           <li id="cat">
@@ -132,7 +163,7 @@
             <div class="catText">
               <h3>Minis</h3>
               <p>Niños de (4 a 12 años)</p>
-              <a href="#" class="catButton"> Leer mas...</a>
+              <a href="categoriamini.html" class="catButton"> Leer mas...</a>
             </div>
           </li>
         </ul>

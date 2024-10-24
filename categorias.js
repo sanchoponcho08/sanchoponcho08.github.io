@@ -52,32 +52,50 @@ function move(direction) {
 updateCarousel();
 */
 
-const images = [
-  "imagenes/categoriafem.jpg",
-  "imagenes/categoriajuv.jpg",
-  "imagenes/imagenfixed.png",
-];
-
 let currentIndex = 0;
+let interval;
 
 function showImage(index) {
   const imgs = document.querySelectorAll("#inicioVista img");
+  const titles = document.querySelectorAll("#inicioVista .slide-title");
+
   imgs.forEach((img, i) => {
     img.classList.remove("active");
-    if (i === index) {
-      img.classList.add("active");
-    }
+    titles[i].style.display = "none";
   });
+
+  imgs[index].classList.add("active");
+  titles[index].style.display = "block";
 }
 
 function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length; // Avanzar al siguiente índice
+  const imgs = document.querySelectorAll("#inicioVista img");
+  currentIndex = (currentIndex + 1) % imgs.length;
   showImage(currentIndex);
 }
 
 function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length; // Retroceder al índice anterior
+  const imgs = document.querySelectorAll("#inicioVista img");
+  currentIndex = (currentIndex - 1 + imgs.length) % imgs.length;
   showImage(currentIndex);
 }
 
+function startSlider() {
+  interval = setInterval(nextImage, 5000); //
+}
+
+function stopSlider() {
+  clearInterval(interval);
+}
+
+function resetSlider() {
+  stopSlider();
+  startSlider();
+}
+
+document.querySelector(".arrow.left").addEventListener("click", resetSlider);
+document.querySelector(".arrow.right").addEventListener("click", resetSlider);
+
 showImage(currentIndex);
+
+startSlider();
