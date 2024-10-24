@@ -11,10 +11,12 @@
     <header>
       <nav id="header">
         <div class="logoconteiner">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img src="imagenes/pelotaicono.png" alt="Logo" />
           </a>
-          <a class="titulonav"><span class="4vientos">4</span> vientos</a>
+          <a href="index.html" class="titulonav"
+            ><span class="4vientos">4</span> vientos</a
+          >
         </div>
         <ul class="nav">
           <li><a id="index" href="index.html">Inicio</a></li>
@@ -44,11 +46,11 @@
               </li>
             </ul>
           </li>
-          <li><a id="index" href="contacto.html">Contacto</a></li>
+          <li><a id="index" href="/formulario.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <form id="Formulario">
+    <form id="Formulario" novalidate>
       <h2>Formulario de inscripcion/consulta <br />- Club 4 Vientos</h2>
       <div class="input">
         <label
@@ -91,15 +93,19 @@
           <select name="categorias" id="categorias">
             <option value="Categoria Minis">Minis (4-12 años)</option>
             <option value="Categoria juveniles">Juveniles (12-18años)</option>
-            <option value="Categoria Primera Masculino">Primera Masculino (+18)</option>
-            <option value="Categoria Primera Femenino">Primera Femenino (+18)</option>
+            <option value="Categoria Primera Masculino">
+              Primera Masculino (+18)
+            </option>
+            <option value="Categoria Primera Femenino">
+              Primera Femenino (+18)
+            </option>
           </select>
         </label>
       </div>
+      <div class="feedback" id="mensajeFeedback"></div>
+      <div class="feedback-list" id="datosIngresados"></div>
+      <div id="result"></div>
       <button type="submit" id="enviar">Enviar</button>
-      <div class="feedback" id="mensajeFeedback"></div> 
-      <div class="feedback-list" id="datosIngresados"></div> 
     </form>
-    <div id="result"></div>
   </body>
 </html>
