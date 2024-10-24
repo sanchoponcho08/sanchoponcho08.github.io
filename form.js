@@ -1,5 +1,5 @@
 document.getElementById("Formulario").onsubmit = function (event) {
-  event.preventDefault(); 
+  event.preventDefault();
 
   const name = document.getElementById("usuario").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -8,54 +8,53 @@ document.getElementById("Formulario").onsubmit = function (event) {
 
   const resultDiv = document.getElementById("result");
   const feedbackDiv = document.getElementById("mensajeFeedback");
-  resultDiv.innerHTML = ""; 
-  feedbackDiv.innerHTML = ""; 
+  resultDiv.innerHTML = "";
+  feedbackDiv.innerHTML = "";
 
   let errors = [];
 
   if (!name) {
-    errors.push("El nombre es obligatorio.");
+      errors.push("El nombre es obligatorio.");
   } else if (!/^[A-Za-z\s]+$/.test(name)) {
-    errors.push("El nombre solo puede contener letras y espacios.");
+      errors.push("El nombre solo puede contener letras y espacios.");
   }
 
   if (!email) {
-    errors.push("El correo es obligatorio.");
+      errors.push("El correo es obligatorio.");
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    errors.push("El correo electrónico no es válido.");
+      errors.push("El correo electrónico no es válido.");
   }
 
   if (!message) {
-    errors.push("El mensaje es obligatorio.");
+      errors.push("El mensaje es obligatorio.");
   }
 
   if (!category) {
-    errors.push("Debes seleccionar una categoría.");
+      errors.push("Debes seleccionar una categoría.");
   }
 
   if (errors.length > 0) {
-    errors.forEach((error) => {
-      const errorElement = document.createElement("p");
-      errorElement.textContent = error;
-      errorElement.style.color = "red"; 
-      feedbackDiv.appendChild(errorElement);
-    });
+      errors.forEach((error) => {
+          const errorElement = document.createElement("p");
+          errorElement.textContent = error;
+          errorElement.style.color = "red"; 
+          feedbackDiv.appendChild(errorElement);
+      });
   } else {
-    const nameElement = document.createElement("p");
-    const emailElement = document.createElement("p");
-    const messageElement = document.createElement("p");
-    const categoryElement = document.createElement("p");
+      // Crear un contenedor para los datos que se va a mostrar
+      const dataContainer = document.createElement("div");
+      dataContainer.classList.add("feedback"); // Clase que ya tienes en CSS
 
-    nameElement.textContent = `Nombre: ${name}`;
-    emailElement.textContent = `Email: ${email}`;
-    messageElement.textContent = `Mensaje: ${message}`;
-    categoryElement.textContent = `Categoría: ${category}`;
+      // Añadir los datos al contenedor
+      dataContainer.innerHTML = `
+          <p>Nombre: ${name}</p>
+          <p>Email: ${email}</p>
+          <p>Mensaje: ${message}</p>
+          <p>Categoría: ${category}</p>
+      `;
 
-    resultDiv.appendChild(nameElement);
-    resultDiv.appendChild(emailElement);
-    resultDiv.appendChild(messageElement);
-    resultDiv.appendChild(categoryElement);
-
-    this.reset();
+      // Añadir el contenedor con los datos al div resultDiv
+      resultDiv.appendChild(dataContainer);
+      this.reset();
   }
 };
