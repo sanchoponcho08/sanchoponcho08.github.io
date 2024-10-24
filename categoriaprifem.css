@@ -33,7 +33,7 @@ body {
 
 nav {
   position: fixed;
-  top: 0;
+
   width: 100%;
   height: 8%;
   display: flex;
@@ -134,7 +134,6 @@ ul {
   color: white;
   text-align: center;
   background-attachment: fixed;
-  margin-right: 0;
 }
 .primeraVista h1 {
   font-size: 3rem;
@@ -256,6 +255,52 @@ ul {
 }
 .slider-box img {
   width: 25vw;
+}
+
+#tituloSecciones,
+.columna h3 {
+  border-bottom: solid 2px #851d3c;
+  width: 100%;
+  color: #350d19;
+  font-size: 1rem;
+}
+#sobreNosotros,
+#noticias,
+#categorias {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 7%;
+  margin: 10px;
+}
+#noticias {
+  background: #1d1d1d;
+  border-radius: 10px 60px 30px;
+}
+#tituloSecciones {
+  color: #272727;
+}
+#sobreNosotros img {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.columnasContenido {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.columna {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.columna p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 991px) {
