@@ -272,7 +272,9 @@ ul {
   background-color: rgba(0, 0, 0, 0.267);
 }
 /*tarjetas para cada categoria*/
+
 #cat {
+  width: 100%;
   height: 25vw;
   background: #e2e2e2;
   margin: auto;
@@ -281,11 +283,13 @@ ul {
   margin-right: 20px;
   border-bottom: 4px #851d3cda solid;
   border-radius: 2%;
+  text-align: center;
 }
 
 #cat:hover {
-  height: 30vw;
-  width: 160vw;
+  height: 25vw;
+  width: 120vw;
+  padding: 50px 0px;
   background-color: #7a0e2ee0;
   cursor: url("imagenes/cursor\ \(1\).png"), auto;
   transition: 1.5s ease all;
@@ -301,7 +305,7 @@ ul {
   font-weight: bolder;
   border-radius: 35px;
   padding: 10px;
-  margin-top: 5%;
+  margin-top: 20px;
   letter-spacing: 3px;
   text-align: center;
   box-shadow: 0 0 5px red;
@@ -314,10 +318,10 @@ ul {
   text-shadow: 0 0 2px #d8240ca9;
   border-bottom: 2px solid #d8240ca9;
   text-shadow: 0 0 3px #ffffff;
-  margin: 10px;
+  margin-top: 40px;
 }
 #cat img {
-  height: 20vw;
+  width: 15vw;
 }
 .catText {
   visibility: hidden;
@@ -330,6 +334,7 @@ ul {
   transition-delay: 0.6s;
   color: #fafafa;
 }
+
 .noticias {
   display: flex;
   flex-wrap: wrap;
@@ -421,46 +426,6 @@ body footer img {
   margin: auto;
 }
 /*-------------------------------------------*/
-.titulo {
-  text-align: center;
-  font-size: 40px;
-  padding-top: 50px;
-}
-
-.slider-box {
-  width: 100%;
-  height: auto;
-  margin: 50px auto 0;
-  overflow: hidden;
-  text-align: center;
-  padding: 10px;
-}
-.slider-box ul {
-  display: flex;
-  padding: 0;
-  width: auto;
-  animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-box li {
-  width: 100%;
-  list-style: none;
-}
-
-.texto {
-  text-align: center;
-  padding: 0 0px;
-  color: #494040;
-  margin: auto;
-}
-
-.texto h2 {
-  font-size: 20px;
-  margin-bottom: 35px;
-}
-.slider-box img {
-  width: 15vw;
-}
 
 /*/
 @keyframes slide {
@@ -505,10 +470,6 @@ body footer img {
     padding: 20px;
     width: 40%;
   }
-  .slider-box {
-    width: 100%;
-    padding: 10px;
-  }
 
   .texto {
     top: 50%;
@@ -536,10 +497,7 @@ body footer img {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   }
   #cat:hover {
-    height: 38vw;
+    height: 35vw;
     width: 160vw;
-    background-color: #7a0e2ee0;
-    cursor: url("imagenes/cursor\ \(1\).png"), auto;
-    transition: 1.5s ease all;
   }
 }
