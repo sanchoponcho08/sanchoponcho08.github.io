@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minis</title>
-  </head>
-  <body>
-    <p>Somos los minis</p>
-  </body>
+    <title>Categorías</title>
+    <link rel="stylesheet" href="categoriamini.css" />
+</head>
+<body>
+    <header>
+        <nav id="header">
+            <div class="logoconteiner">
+                <a href="index.html" class="logo">
+                    <img src="imagenes/pelotaicono.png" alt="Logo" />
+                </a>
+                <a href="index.html" class="titulonav"><span class="4vientos">4</span> vientos</a>
+            </div>
+            <ul class="nav">
+                <li><a id="index" href="/index.html">Inicio</a></li>
+                <li>
+                    <a id="index" href="#">Categorías</a>
+                    <ul>
+                        <li><a id="index" class="submenu" href="categoriaprifem.html">Femenino</a></li>
+                        <li><a id="index" class="submenu" href="categoriaprimasc.html">Masculino</a></li>
+                        <li><a id="index" class="submenu" href="categoriajuv.html">Juveniles</a></li>
+                        <li><a id="index" class="submenu" href="categoriamini.html">Minis</a></li>
+                    </ul>
+                </li>
+                <li><a id="index" href="/formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="primeraVista">
+        <h1 class="titulo">
+            <span>Primera Femenino <br /> Club 4 Vientos</span>
+        </h1>
+        <div class="logoVista">
+            <a href="#sobreNosotros">
+                <img src="imagenes/logo.jpg" alt="logo 4 vientos" />
+            </a>
+        </div>
+    </div>
+    <div id="categorias">
+        <h2 id="tituloSecciones"> Fixture de Proximos Partidos</h2>
+        <div class="slider-box">
+            <div class="arrow left">❮</div>
+            <ul>
+                <li class="fixture">
+                    <img src="imagenes/minis1.jpeg" alt="femenino" />
+                </li >
+                <li class="fixture">
+                    <img src="imagenes/minis-2.jpeg" alt="masculino" />
+                </li>
+                <li class="fixture">
+                    <img src="imagenes/minis-1.jpeg" alt="juveniles" />
+                </li>
+                <li class="fixture">
+                    <img src="imagenes/minis-3.jpeg" alt="minis" />
+                </li>
+            </ul>
+            <div class="arrow right">❯</div>
+        </div>
+    </div>
+     <div id="sobreNosotros">
+      <h2 id="tituloSecciones">¡Somos la primera femenino!</h2>
+      <p>
+        En el Club 4 Vientos, la pasión por el básquet nos une. Somos un grupo de jugadores, entrenadores y amantes del deporte que compartimos el amor por el juego y la idea de crecer juntos, tanto en la cancha como fuera de ella.
+      </p>
+      <div class="columnasContenido">
+        <div class="columna">
+          <h3> Sobre Nosotros</h3>
+          <p> Nuestro club está compuesto por jugadores de todas las edades y niveles, desde los que recién empiezan hasta los más avanzados. Acá, cada uno tiene la oportunidad de desarrollarse y disfrutar del básquet en un ambiente amigable, donde la amistad y el trabajo en equipo son clave.</p>
+        </div>
+
+        <div class="columna">
+            <h3>Nuestras Actividades</h3>
+          <p>Ofrecemos entrenamientos regulares, competencias amistosas y torneos. Además, organizamos eventos y actividades recreativas de básquet para los más chicos, con el objetivo de promover el deporte y formar a la próxima generación de jugadores.</p>
+        </div>
+      </div>
+
+      <div id="sobreNosotros">
+      <h2 id="tituloSecciones">Horarios Semanales</h2>
+      <img src="imagenes/horariosemanal.png" alt="horarios">
+      
+
+      
+
+    <script src="categorias.js"></script>
+</body>
 </html>
