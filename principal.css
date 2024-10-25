@@ -292,7 +292,7 @@ ul {
   padding: 50px 0px;
   background-color: #7a0e2ee0;
   cursor: url("imagenes/cursor\ \(1\).png"), auto;
-  transition: 1.5s ease all;
+  transition: 0.5s ease all;
 }
 
 .catButton {
