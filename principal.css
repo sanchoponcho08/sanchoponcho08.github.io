@@ -123,8 +123,7 @@ ul {
 .primeraVista {
   width: 100%;
   height: 100vh;
-  background: url("imagenes/polideportivoimg.jpg") no-repeat center/cover;
-  border-image: fill 0 linear-gradient(#0001, #000000d0); /*gradiente para la imagen*/
+  border-image: fill 0 linear-gradient(#0001, #000000d0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,62 +146,7 @@ ul {
   text-shadow: -6px 0px rgb(53, 45, 45);
   color: #ebebeb;
 }
-/*
-#inicioVista {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  border: 2px solid #ccc;
-}
 
-#inicioVista img {
-  width: 100%;
-  height: 100vh;
-  display: none;
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
-  margin: 0;
-  padding: 0;
-}
-
-#inicioVista img.active {
-  display: block;
-  opacity: 1;
-}
-
-.arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgb(185, 22, 22);
-  font-size: 70px;
-}
-
-.left {
-  left: 20px;
-}
-
-.right {
-  right: 20px;
-}
-
-.slide-title {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  z-index: 1;
-}
-
-#inicioVista img.active + .slide-title {
-  display: block;
-}
-*/
 .scroll {
   position: absolute;
   bottom: 20px;
@@ -271,7 +215,6 @@ ul {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.267);
 }
-/*tarjetas para cada categoria*/
 
 #cat {
   width: 100%;
@@ -331,10 +274,13 @@ ul {
 }
 #cat:hover .catText {
   visibility: visible;
-  transition-delay: 0.6s;
+  transition-delay: 0.4s;
   color: #fafafa;
 }
 
+#catText {
+  font-size: 1.3rem;
+}
 .noticias {
   display: flex;
   flex-wrap: wrap;
@@ -395,6 +341,27 @@ ul {
 
   font-weight: bolder;
 }
+
+.faq ul {
+  display: contents;
+}
+
+.faq p {
+  font-weight: 100;
+}
+
+details {
+  padding: 9px;
+}
+details[open] {
+  font-weight: bold;
+}
+summary {
+  background-color: rgba(192, 192, 192, 0.26);
+  border: 1px solid rgba(85, 85, 85, 0.733);
+  border-radius: 10px;
+  padding: 10px;
+}
 footer {
   width: 100%;
   height: 30vw;
@@ -425,39 +392,68 @@ body footer img {
   height: 200px;
   margin: auto;
 }
-/*-------------------------------------------*/
-
-/*/
-@keyframes slide {
-  0% {
-    margin-left: 0%;
-  }
-  20% {
-    margin-left: 0%;
-  }
-
-  25% {
-    margin-left: -100%;
-  }
-  45% {
-    margin-left: -100%;
-  }
-
-  50% {
-    margin-left: -200%;
-  }
-  70% {
-    margin-left: -200%;
-  }
-
-  75% {
-    margin-left: -300%;
-  }
-  100% {
-    margin-left: -300%;
-  }
+.carrusel {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
 }
-*/
+
+.carrusel-contenedor {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrusel-item {
+  min-width: 100%;
+  position: relative;
+}
+
+.carrusel-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carrusel-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+#carruseltext img {
+  width: 200px;
+  box-shadow: 0px 0px 15px rgba(226, 226, 226, 0.637);
+  border-radius: 8%;
+  opacity: 80%;
+  margin-bottom: 500px;
+}
+
+.carrusel-btn {
+  color: rgba(255, 0, 0, 0.767);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 4rem;
+  z-index: 1;
+}
+
+.anterior {
+  left: 10px;
+}
+
+.siguiente {
+  right: 10px;
+}
+
 @media (max-width: 991px) {
   body {
     padding: 0px;
@@ -485,17 +481,11 @@ body footer img {
   }
 
   .nav li ul {
-    display: none;
-    position: fixed;
     min-width: 140px;
-    top: 11%;
+    top: 8%;
     left: 70%;
-    background-color: #610d26;
-    padding: 10px;
-    margin: 0;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   }
+
   #cat:hover {
     height: 35vw;
     width: 160vw;
